@@ -1,0 +1,137 @@
+﻿@model JavaFlorist.Models.CheckOut
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>CheckOut</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="SenderFullName" class="control-label"></label>
+                <input asp-for="SenderFullName" class="form-control" />
+                <span asp-validation-for="SenderFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SenderEmail" class="control-label"></label>
+                <input asp-for="SenderEmail" class="form-control" />
+                <span asp-validation-for="SenderEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SenderPhone" class="control-label"></label>
+                <input asp-for="SenderPhone" class="form-control" />
+                <span asp-validation-for="SenderPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SenderAddress" class="control-label"></label>
+                <input asp-for="SenderAddress" class="form-control" />
+                <span asp-validation-for="SenderAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderDate" class="control-label"></label>
+                <input asp-for="OrderDate" class="form-control" />
+                <span asp-validation-for="OrderDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReciverName" class="control-label"></label>
+                <input asp-for="ReciverName" class="form-control" />
+                <span asp-validation-for="ReciverName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReciverAddress" class="control-label"></label>
+                <input asp-for="ReciverAddress" class="form-control" />
+                <span asp-validation-for="ReciverAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReciverPhone" class="control-label"></label>
+                <input asp-for="ReciverPhone" class="form-control" />
+                <span asp-validation-for="ReciverPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReceiverDate" class="control-label"></label>
+                <input asp-for="ReceiverDate" class="form-control" />
+                <span asp-validation-for="ReceiverDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloristName" class="control-label"></label>
+                <input asp-for="FloristName" class="form-control" />
+                <span asp-validation-for="FloristName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloristLogo" class="control-label"></label>
+                <input asp-for="FloristLogo" class="form-control" />
+                <span asp-validation-for="FloristLogo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloristEmail" class="control-label"></label>
+                <input asp-for="FloristEmail" class="form-control" />
+                <span asp-validation-for="FloristEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloristPhone" class="control-label"></label>
+                <input asp-for="FloristPhone" class="form-control" />
+                <span asp-validation-for="FloristPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FloristAddress" class="control-label"></label>
+                <input asp-for="FloristAddress" class="form-control" />
+                <span asp-validation-for="FloristAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BouquetId" class="control-label"></label>
+                <input asp-for="BouquetId" class="form-control" />
+                <span asp-validation-for="BouquetId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BouquetName" class="control-label"></label>
+                <input asp-for="BouquetName" class="form-control" />
+                <span asp-validation-for="BouquetName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BouquetPrice" class="control-label"></label>
+                <input asp-for="BouquetPrice" class="form-control" />
+                <span asp-validation-for="BouquetPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BouquetQuantity" class="control-label"></label>
+                <input asp-for="BouquetQuantity" class="form-control" />
+                <span asp-validation-for="BouquetQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BouquetBrief" class="control-label"></label>
+                <input asp-for="BouquetBrief" class="form-control" />
+                <span asp-validation-for="BouquetBrief" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Messages" class="control-label"></label>
+                <input asp-for="Messages" class="form-control" />
+                <span asp-validation-for="Messages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

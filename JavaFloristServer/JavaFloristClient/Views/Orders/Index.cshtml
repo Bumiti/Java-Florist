@@ -1,0 +1,107 @@
+﻿@model IEnumerable<JavaFloristClient.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>ORDER</h1>
+
+<p>
+    <a asp-action="Create"><i class="fa fa-plus"></i> Create New</a>
+</p>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">DataTable with default features</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.OrderDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ReceiveDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BouquetBrief)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Messages)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Amount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Florist)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Receiver)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OrderDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReceiveDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BouquetBrief)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Messages)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Amount)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Florist.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Receiver.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status.Type)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary"><i class="fa fa-eye"></i> Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</a> |
+                            <form asp-action="OrderConfirm" method="post">
+                                <input name="id" class="form-control" type="hidden" id="id" value="@item.Id" />
+                                <input type="submit" value="Confirm" class="btn btn-primary" />
+                            </form>
+                            <form asp-action="OrderCancel" method="post">
+                                <input name="id" class="form-control" type="hidden" id="id" value="@item.Id" />
+                                <input type="submit" value="Cancel" class="btn btn-primary" />
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

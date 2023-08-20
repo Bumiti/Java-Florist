@@ -1,0 +1,419 @@
+﻿@model JavaFloristClient.Models.CheckOut
+
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    double? grandTotal = 0; // Khởi tạo biến grandTotal để tính tổng
+}
+<body>
+    <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Checkout </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-area pt-95 pb-100">
+        <div class="container">
+            <div class="row">
+
+                <form asp-action="CheckOut" method="post" onsubmit="return validateVoucher();">
+
+                    <div class="col-lg-7">
+                        <div class="billing-info-wrap">
+                            <h3>Billing Details</h3>
+                            <div class="row">
+                                @*<div class="col-lg-6 col-md-6">
+                                <div class="billing-info mb-20">
+                                <label>First Name</label>
+                                <input type="text">
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                <div class="billing-info mb-20">
+                                <label>Last Name</label>
+                                <input type="text">
+                                </div>
+                                </div>*@
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                        <label asp-for="SenderFullName">Full Name</label>
+                                        <input asp-for="SenderFullName" class="form-control" />
+                                        <span asp-validation-for="SenderFullName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                @*<div class="col-lg-12">
+                                <div class="billing-select mb-20">
+                                <label>Country</label>
+                                <select>
+                                <option>Select a country</option>
+                                <option>Azerbaijan</option>
+                                <option>Bahamas</option>
+                                <option>Bahrain</option>
+                                <option>Bangladesh</option>
+                                <option>Barbados</option>
+                                </select>
+                                </div>
+                                </div>*@
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                        <label asp-for="SenderAddress">Street Address</label>
+                                        <input asp-for="SenderAddress" class="form-control" />
+                                        <span asp-validation-for="SenderAddress" class="text-danger"></span>
+                                        @*<input placeholder="Apartment, suite, unit etc." type="text">*@
+                                    </div>
+                                </div>
+                                @*<div class="col-lg-12">
+                                <div class="billing-info mb-20">
+                                <label>Town / City</label>
+                                <input type="text">
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                <div class="billing-info mb-20">
+                                <label>State / County</label>
+                                <input type="text">
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                <div class="billing-info mb-20">
+                                <label>Postcode / ZIP</label>
+                                <input type="text">
+                                </div>
+                                </div>*@
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                        <label asp-for="SenderPhone">Phone</label>
+                                        <input asp-for="SenderPhone" class="form-control" />
+                                        <span asp-validation-for="SenderPhone" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                        <label asp-for="SenderEmail">Email Address</label>
+                                        <input asp-for="SenderEmail" class="form-control" />
+                                        <span asp-validation-for="SenderEmail" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="billing-info mb-20">
+                                    <label asp-for="OrderDate">Order Date</label>
+                                    <input asp-for="OrderDate" class="form-control" type="datetime-local" id="myDateInput" />
+                                    <span asp-validation-for="OrderDate" class="text-danger">
+                                        @if (!string.IsNullOrEmpty(ViewBag.OrderDate))
+                                        {
+                                            @ViewBag.OrderDate
+                                        }
+                                    </span>
+                                </div>
+                            </div>
+                            @*<div class="checkout-account mb-50">
+                            <input class="checkout-toggle2" type="checkbox">
+                            <span>Create an account?</span>
+                            </div>
+                            <div class="checkout-account-toggle open-toggle2 mb-30">
+                            <input placeholder="Email address" type="email">
+                            <input placeholder="Password" type="password">
+                            <button class="btn-hover checkout-btn" type="submit">register</button>
+                            </div>*@
+                            <div class="checkout-account mt-25">
+                                <input class="checkout-toggle" type="checkbox" name="shipToMyAddress" asp-for="ShipToMyAddress">
+                                <span>Ship to a my address?</span>
+                            </div>
+                            <div class="different-address open-toggle mt-30" style="display:block;" id="differentAddressSection">
+                                <div class="row">
+                                    @*<div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                    <label>First Name</label>
+                                    <input type="text">
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                    <label>Last Name</label>
+                                    <input type="text">
+                                    </div>
+                                    </div>*@
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-20">
+                                            <label asp-for="ReciverName">Full Name</label>
+                                            <input asp-for="ReciverName" class="form-control" />
+                                            <span asp-validation-for="ReciverName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    @*<div class="col-lg-12">
+                                    <div class="billing-select mb-20">
+                                    <label>Country</label>
+                                    <select>
+                                    <option>Select a country</option>
+                                    <option>Azerbaijan</option>
+                                    <option>Bahamas</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                    </select>
+                                    </div>
+                                    </div>*@
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-20">
+                                            <label asp-for="ReciverAddress">Street Address</label>
+                                            <input asp-for="ReciverAddress" class="form-control" />
+                                            <span asp-validation-for="ReciverAddress" class="text-danger"></span>
+                                            @*<input placeholder="Apartment, suite, unit etc." type="text">*@
+                                        </div>
+                                    </div>
+                                    @*<div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                    <label>Town / City</label>
+                                    <input type="text">
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                    <label>State / County</label>
+                                    <input type="text">
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                    <label>Postcode / ZIP</label>
+                                    <input type="text">
+                                    </div>
+                                    </div>*@
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="billing-info mb-20">
+                                            <label asp-for="ReciverPhone">Phone</label>
+                                            <input asp-for="ReciverPhone" class="form-control" />
+                                            <span asp-validation-for="ReciverPhone" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="additional-info-wrap">
+                                        <h4>Additional information</h4>
+                                        <div class="additional-info">
+                                            @*<label asp-for="Messages" class="control-label">Occasion</label>
+                                            <select asp-for="Messages" id="occasion" class="form-control" asp-items="ViewBag.OccasionId" onchange="navigateToAction()"></select>*@
+                                            <label class="control-label">Occasion</label>
+                                            <select id="occasion" class="form-control" onchange="navigateToAction()">
+                                                <option value="">
+                                                    @* @if
+                                                    (!string.IsNullOrEmpty(ViewBag.Occasion)) { ViewBag.Occasion
+                                                    }else { Select an occasion}*@
+                                                    @ViewBag.Occasion
+                                                </option>
+                                                <option value="1">Birthday</option>
+                                                <option value="2">Get Well</option>
+                                                <option value="3">Graduation</option>
+                                                <option value="4">Grand Opening</option>
+                                                <option value="5">Love</option>
+                                                <option value="6">Noel</option>
+                                                <option value="7">Sympathy - Funerals</option>
+                                                <option value="8">Thanks</option>
+                                                <option value="9">Wedding</option>
+                                            </select>
+                                            <label asp-for="Messages">Message</label>
+                                            <select asp-for="Messages" class="form-control" asp-items="ViewBag.Message"></select>
+                                            <span asp-validation-for="Messages" class="text-danger"></span>
+                                            @*<textarea placeholder="Notes about your order, e.g. special notes for delivery. " name="message"></textarea>*@
+                                        </div>
+                                    </div>
+                                    @*<div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                    <label asp-for="ReceiverDate">Receiver Date</label>
+                                    <input asp-for="ReceiverDate" class="form-control" />
+                                    </div>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="discount-code-wrapper">
+                            <div class="title-wrap">
+                                <h4 class="cart-bottom-title section-bg-gray">Use Coupon Code</h4>
+                            </div>
+                            <div class="discount-code">
+                                <p>Enter your coupon code if you have one.</p>
+                                <input asp-for="Code" class="form-control" />
+                                @*                                <button class="cart-btn-2" type="submit">Apply Coupon</button>
+                                *@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <div class="your-order-area">
+                            @if (ViewBag.CheckPayment == "Done" || ViewBag.CheckPayment == null)
+                            {
+                                <h3>Your order</h3>
+                                <div class="your-order-wrap gray-bg-4">
+                                    <div class="your-order-product-info">
+                                        <div class="your-order-top">
+                                            <ul>
+                                                <li>Product</li>
+                                                <li>Total</li>
+                                            </ul>
+                                        </div>
+                                        <div class="your-order-middle">
+                                            @foreach (var item in Model.CartItems)
+                                            {
+                                                <ul>
+                                                    <li><span class="order-middle-left">@item.Name  X  @item.Quantity</span> <span class="order-price">$@item.Price </span></li>
+                                                </ul>
+
+                                            }
+                                        </div>
+                                        <div class="your-order-bottom">
+                                            <ul>
+                                                <li class="your-order-shipping">Shipping</li>
+                                                <li>Free shipping</li>
+                                            </ul>
+                                        </div>
+                                        <div class="your-order-total">
+                                            <ul>
+                                                @foreach (var item in Model.CartItems)
+                                                {
+                                                    grandTotal += item.Quantity * item.Price; // Cộng dồn giá trị vào biến grandTotal
+                                                }
+                                                <li class="order-total">Total</li>
+                                                <li><input asp-for="Amount" class="form-control" value="$@grandTotal" readonly /></li>
+                                                <li>
+                                                    <span asp-validation-for="Messages" class="text-danger">
+
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="payment-method">
+                                        <div class="payment-accordion element-mrg">
+                                            <div class="panel-group" id="accordion">
+                                                <div class="panel payment-accordion">
+                                                    <div class="panel-heading" id="method-one">
+                                                        <h4 class="panel-title">
+                                                            <a data-bs-toggle="collapse" href="#method1">
+                                                                Direct bank transfer
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="method1" class="panel-collapse collapse show" data-bs-parent="#accordion">
+                                                        <div class="panel-body">
+                                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel payment-accordion">
+                                                    <div class="panel-heading" id="method-two">
+                                                        <h4 class="panel-title">
+                                                            <a class="collapsed" data-bs-toggle="collapse" href="#method2">
+                                                                Check payments
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="method2" class="panel-collapse collapse" data-bs-parent="#accordion">
+                                                        <div class="panel-body">
+                                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel payment-accordion">
+                                                    <div class="panel-heading" id="method-three">
+                                                        <h4 class="panel-title">
+                                                            <a class="collapsed" data-bs-toggle="collapse" href="#method3">
+                                                                Cash on delivery
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="method3" class="panel-collapse collapse" data-bs-parent="#accordion">
+                                                        <div class="panel-body">
+                                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <div class="Place-order mt-25">
+                                @if (ViewBag.CheckPayment == "Done" || ViewBag.CheckPayment==null)
+                                {
+                                    <a asp-controller="VnPay" asp-action="Index" asp-route-name="@ViewBag.FullName" asp-route-amount="@grandTotal">Payment</a>
+                                }
+                                else
+                                {
+                                    <input type="submit" value="Place Order" class="btn btn-primary" />
+                                }
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //function validateVoucher() {
+    //    var voucherCode = document.getElementById("Code").value;
+    //    if (voucherCode !== "FirstOrder") {
+    //        showToast("Invalid voucher code. Please enter a valid code.");
+    //        return false;
+    //    }
+    //    return true;
+    //}
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the current date and time
+        var currentDate = new Date().toISOString().slice(0, 16); // Format: 'yyyy-MM-ddTHH:mm'
+
+        // Set the minimum date for the input field
+        $('#myDateInput').attr('min', currentDate);
+    });
+    //$(document).ready(function () {
+    //    // Get the current date and time
+    //    var currentDate = new Date().toISOString().split('T')[0];
+
+    //    // Set the minimum date for the input field
+    //    $('#myDateInput').attr('min', currentDate);
+    //});
+    //$(function () {
+    //    $("#datepicker").datepicker({
+    //        minDate: 0 // Set the minimum date to today
+    //    });
+    //});
+    //// Lắng nghe sự kiện click vào các ghế
+    //document.querySelectorAll('.seat').forEach(seat => {
+    //    seat.addEventListener('click', () => {
+    //        seat.classList.toggle('selected');
+    //    });
+    //});
+
+    const checkbox = document.getElementById('shipToMyAddress');
+    const differentAddressSection = document.getElementById('differentAddressSection');
+
+    checkbox.addEventListener('change', function () {
+        if (checkbox.checked) {
+            differentAddressSection.style.display = 'none';
+        } else {
+            differentAddressSection.style.display = 'block';
+        }
+    });
+
+    function validateVoucher() {
+        var voucherCode = document.getElementById("Code").value;
+        if (voucherCode == "FirstOrder" || voucherCode == "" || voucherCode == null) {
+            return true;
+        }
+        alert("Invalid voucher code. Please enter a valid code.");
+        return false;
+    }
+    function navigateToAction() {
+        var selectedOccasionId = document.getElementById("occasion").value;
+        window.location.href = `/Customers/CheckOut?occasion=${selectedOccasionId}`;
+    }
+</script>

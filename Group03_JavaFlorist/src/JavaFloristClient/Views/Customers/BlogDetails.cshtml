@@ -1,0 +1,67 @@
+﻿@model JavaFloristClient.Models.Blog
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<body>
+    <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a asp-action="Index">Home</a>
+                    </li>
+                    <li class="active">Blog Details </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Blog-area pt-100 pb-100">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-12">
+                    <div class="blog-details-wrapper ml-20">
+                        <div class="blog-details-top">
+                            <div class="blog-details-img">
+                                <img src=@Model.Image>
+                            </div>
+                            <div class="blog-details-content">
+                                <div class="blog-meta-2">
+                                    <ul>
+                                        <li>@Model.PublishDate</li>
+
+                                    </ul>
+                                </div>
+                                <h3>@Model.Title</h3>
+                                <p>
+                                @Html.Raw(Model.Content.Substring(0, Model.Content.Length / 3))
+                                </p>
+                                <blockquote>
+                                    @Model.BlogBrief
+                                </blockquote>
+                                <p>
+                                @Html.Raw(Model.Content.Substring(Model.Content.Length / 3, Model.Content.Length / 3))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dec-img-wrapper">
+                            <p>
+                                @Html.Raw(Model.Content.Substring((Model.Content.Length / 3) * 2))
+                            </p>
+                        </div>
+                        <div class="tag-share">
+                            <div class="dec-tag">
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>

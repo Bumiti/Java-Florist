@@ -1,0 +1,49 @@
+﻿@model JavaFloristClient.Models.VnPayPayments.PaymentInformationModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Thanh toán VnPay tại <a href="https://code-mega.com">Code Mega</a></h1>
+    <p>Learn about <a href="https://code-mega.com">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="table-responsive">
+    <form asp-action="CreatePaymentUrl" id="frmCreateOrder" method="POST">
+        <div class="form-group">
+            <label asp-for="OrderType">Loại hàng hóa </label>
+            <select asp-for="OrderType" name="OrderType" id="ordertype" class="form-control">
+                <option  value="bouquet">Bouquet</option>
+            </select>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Name">Email</label>
+            <input asp-for="Name" class="form-control"
+                   id="Name"
+                   name="Name"
+                   type="text"
+                   value="@ViewBag.PaymentName" readonly>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Amount">Amount</label>
+            <input asp-for="Amount" class="form-control"
+                   id="Amount"
+                   name="Amount"
+                   type="text"
+                   value="@ViewBag.PaymentAmount" readonly>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="OrderDescription">Order Description</label>
+            <textarea asp-for="OrderDescription" class="form-control"
+                      cols="20"
+                      id="OrderDescription"
+                      name="OrderDescription"
+                      rows="2">Thanh toán tại Code Mega</textarea>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Checkout</button>
+    </form>
+</div>

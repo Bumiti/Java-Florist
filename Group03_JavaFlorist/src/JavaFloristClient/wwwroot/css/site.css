@@ -1,0 +1,56 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/*
+.product-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+.custom-button {
+    background-color: #29abe2;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .custom-button:hover {
+        background-color: #1b7ca9;
+    }
+
+    .custom-button:focus {
+        outline: none;
+    }

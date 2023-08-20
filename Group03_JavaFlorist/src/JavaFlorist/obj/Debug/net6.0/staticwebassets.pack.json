@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\admirable_pink_hamper.png",
+      "PackagePath": "staticwebassets\\images\\admirable_pink_hamper.png"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\fascinated_rocher_combo.png",
+      "PackagePath": "staticwebassets\\images\\fascinated_rocher_combo.png"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\frisky_blooms.jpg",
+      "PackagePath": "staticwebassets\\images\\frisky_blooms.jpg"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\love_sweets_-_red_roses_and_chocolates.png",
+      "PackagePath": "staticwebassets\\images\\love_sweets_-_red_roses_and_chocolates.png"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\pink_carnival.jpg",
+      "PackagePath": "staticwebassets\\images\\pink_carnival.jpg"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\pretty_pink.jpg",
+      "PackagePath": "staticwebassets\\images\\pretty_pink.jpg"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\romantic_rose_bouquet.png",
+      "PackagePath": "staticwebassets\\images\\romantic_rose_bouquet.png"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\rose_mix_with_celebration_and_teddy.png",
+      "PackagePath": "staticwebassets\\images\\rose_mix_with_celebration_and_teddy.png"
+    },
+    {
+      "Id": "D:\\STUDY IT\\FPT Aptech\\Sem3\\7. eProject\\15-08\\Group03_JavaFlorist\\src\\JavaFlorist\\wwwroot\\images\\roses-with-ferrero-rocher-heart--1941_1.jpg",
+      "PackagePath": "staticwebassets\\images\\roses-with-ferrero-rocher-heart--1941_1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.JavaFlorist.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.JavaFlorist.props",
+      "PackagePath": "build\\JavaFlorist.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.JavaFlorist.props",
+      "PackagePath": "buildMultiTargeting\\JavaFlorist.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.JavaFlorist.props",
+      "PackagePath": "buildTransitive\\JavaFlorist.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,237 @@
+﻿@model JavaFloristClient.Models.Bouquet
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<body>
+    <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Shop Details </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="shop-area pt-100 pb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-details">
+                        <div class="product-details-img">
+                            <div class="tab-content jump">
+                                <div id="shop-details-2" class="tab-pane active large-img-style">
+                                    <img src="@Url.Content(Model.Image)" alt="">
+                                    <span class="dec-price">@Model.Tag</span>
+                                    @*<div class="img-popup-wrap">
+                                        <a class="img-popup" href="~@Model.Image"><i class="pe-7s-expand1"></i></a>
+                                    </div>*@
+                                </div>
+  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-details-content ml-70">
+                        <h2>@Model.Name</h2>
+                        <div class="product-details-price">
+                            <span>$@Model.PriceAfter.00 </span>
+                        </div>
+
+                        <p>@Model.UnitBrief</p>
+                        <div class="pro-details-list">
+                            <ul>
+                                <li>@Model.Description</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- <div class="pro-details-quality">
+                            <div class="cart-plus-minus">
+                                <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1">
+                            </div>
+                            <div class="pro-details-cart btn-hover">
+                                <a ng-click="Add(carModel.id3)">Add To Cart</a>
+                            </div>
+                        </div> -->
+                        <div class="pro-details-quality">
+                         
+                            <div class="pro-details-cart btn-hover">
+                                <form asp-action="AddToCart" id="addToCartForm" method="post">
+                                    <input name="id" class="form-control" type="hidden" id="id" value="@Model.Id" />
+                                    <button type="submit" value="Add To Cart" class="btn btn-primary">Add To Cart</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class="pro-details-meta">
+                            <span>Categories :</span>
+                            <ul>
+                                <li>@Model.Category.Name</li>
+                            </ul>
+                        </div>
+                        <div class="pro-details-meta">
+                            <span>Florist :</span>
+                            <ul>
+                                <li>@Model.Florist.Name</li>
+                            </ul>
+                        </div>
+                        <div class="pro-details-meta">
+                            <span>Phone :</span>
+                            <ul>
+                                <li>@Model.Florist.Phone</li>
+                            </ul>
+                        </div>
+                        <div class="pro-details-meta">
+                            <span>Address :</span>
+                            <ul>
+                                <li>@Model.Florist.Address</li>
+                            </ul>
+                        </div>
+                        <div class="pro-details-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="description-review-area pb-90">
+        <div class="container">
+            <div class="description-review-wrapper">
+                <div class="description-review-topbar nav">
+                    @*<a data-bs-toggle="tab" href="#des-details1" class="active">Additional information</a>*@
+                    <a data-bs-toggle="tab" href="#des-details2">Description</a>
+                </div>
+                <div class="tab-content description-review-bottom">
+                    <div id="des-details2" class="tab-pane active">
+                        <div class="product-description-wrapper">
+                            <p>@Model.Description</p>
+                        </div>
+                    </div>
+                    @*<div id="des-details1" class="tab-pane active">
+                        <div class="product-anotherinfo-wrapper">
+                            <ul>
+                                <li><span>Weight:</span> 450 g</li>
+                                <li><span>Age:</span> 20 to 35</li>
+                                <li><span>Dimensions:</span>10 x 10 x 15 cm </li>
+                                <li><span>Materials:</span> 60% cotton, 40% polyester</li>
+                                <li><span>Collection:</span> Spring</li>
+                                <li><span>Made in:</span> Italy</li>
+                                <li><span>Other Info:</span> American standard QC</li>
+                                <li>
+                                    <span>Download:</span><a href="doc/Additional information.docx" download="Additional Information">
+                                        <link rel="stylesheet" href="doc/Additional information.docx"><i class="fa fa-download"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="related-product-area pb-95">
+        <div class="container">
+            <div class="section-title text-center mb-50">
+                <h2>Related products</h2>
+            </div>
+            <div class="related-product-active owl-carousel owl-dot-none">
+                <div class="product-wrap">
+                    <div class="product-img">
+                        <a href="product-details-2.html">
+                            <img class="default-img" src="images/product-image/female-product-2-144.jpg" alt="">
+                            <img class="hover-img" src="images/product-image/female-product-2-1-144.jpg" alt="">
+                        </a>
+                        <span class="pink">Best Seller</span>
+                        <div class="product-action">
+                            <div class="pro-same-action pro-cart">
+                                <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details-2.html">Autumn Coat</a></h3>
+                        <h5>Louis Vuitton</h5>
+                        <div class="product-price">
+                            <span>$ 85.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-wrap">
+                    <div class="product-img">
+                        <a href="product-details-3.html">
+                            <img class="default-img" src="images/product-image/female-product-3-144.jpg" alt="">
+                            <img class="hover-img" src="images/product-image/female-product-3-1-144.jpg" alt="">
+                        </a>
+                        <span class="purple">Best Seller</span>
+                        <div class="product-action">
+                            <div class="pro-same-action pro-cart">
+                                <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details-3.html">Style Vest</a></h3>
+                        <h5>Gucci</h5>
+                        <div class="product-price">
+                            <span>$ 160.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-wrap">
+                    <div class="product-img">
+                        <a href="product-details-4.html">
+                            <img class="default-img" src="images/product-image/female-product-4-144.jpg" alt="">
+                            <img class="hover-img" src="images/product-image/female-product-4-1-144.jpg" alt="">
+                        </a>
+                        <span class="pink">Best Seller</span>
+                        <div class="product-action">
+                            <div class="pro-same-action pro-cart">
+                                <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details-4.html">Beautiful T-shirt</a></h3>
+                        <h5>H&M</h5>
+                        <div class="product-price">
+                            <span>$ 27.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-wrap">
+                    <div class="product-img">
+                        <a href="product-details-8.html">
+                            <img class="default-img" src="images/product-image/male-product-4-1-144.png" alt="">
+                            <img class="hover-img" src="images/product-image/male-product-4-2-144.png" alt="">
+                        </a>
+                        <span class="purple">Best Seller</span>
+                        <div class="product-action">
+                            <div class="pro-same-action pro-cart">
+                                <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details-8.html">Long-Hand T-shirt</a></h3>
+                        <h5>Gucci</h5>
+                        <div class="product-price">
+                            <span>$ 42.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>

@@ -1,0 +1,268 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Java Florist</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/javafloristlogo.jpg">
+
+    <!-- CSS
+    ============================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/mainController.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="~/assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<header class="header-area header-in-container clearfix">
+    <div class="header-bottom sticky-bar header-res-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                    <div class="logo">
+                        <a asp-action="Index">
+                            <img alt="" src="~/images/logo/javafloristlogo.jpg" width="150" height="80">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                    <div class="main-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a asp-action="Index">Home </a>
+                                </li>
+                                <li>
+                                    <a asp-action="Shop"> Shop <i class="fa fa-angle-down"></i> </a>
+                                    <ul class="submenu">
+                                        <li><a asp-action="Shop" asp-route-occasion="Birthday Flowers">Birthday Flowers</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Congratulation Flowers">Congratulation Flowers</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Get Well">Get Well</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Graduation"> Graduation</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Grand Opening Flowers">Grand Opening Flowers</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Love Flowers">Love Flowers</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Noel">Noel</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Sympathy - Funerals ">Sympathy - Funerals</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Thanks Flowers ">Thanks Flowers</a></li>
+                                        <li><a asp-action="Shop" asp-route-occasion="Wedding Decoration ">Wedding Decoration</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a asp-action="Blog">Blog</a>
+                                </li>
+                                <li><a asp-action="About"> About </a></li>
+                                <li><a asp-action="Contact"> Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                    <div class="header-right-wrap">
+                        <div class="same-style header-search">
+                            <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
+                            <div class="search-content">
+                                <form action="#">
+                                    <input type="text" placeholder="Search" />
+                                    <button class="button-search"><i class="pe-7s-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="same-style account-satting">
+                            <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
+                            <div class="account-dropdown">
+                                @if (string.IsNullOrEmpty(ViewBag.FullName))
+                                {
+                                    <ul>
+                                        <li><a asp-controller="Customers" asp-action="Login">Login</a></li>
+                                        <li><a asp-controller="Customers" asp-action="Register">Register</a></li>
+                                        @*<li><a href="wishlist.html">Wishlist  </a></li>*@
+                                        @*<li><a asp-action="MyAccount">My Account</a></li>*@
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <ul>
+                                        <li><a asp-controller="Customers" asp-action="MyAccount">@ViewBag.FullName</a></li>
+                                        <li><a asp-controller="Customers" asp-action="MyOrder">My Order</a></li>
+                                        @*<li><a asp-controller="Customers" asp-action="RegisterFlorist">Become Florist</a></li>*@
+                                        <li><a asp-controller="Customers" asp-action="LogOut">Log Out</a></li>
+                                        @*<li><a asp-action="Register">Register</a></li>*@
+                                        @*<li><a href="wishlist.html">Wishlist  </a></li>*@
+                                    </ul>
+                                }
+                            </div>
+                        </div>
+                        <div class="same-style cart-wrap">
+                            <button class="icon-cart">
+                                @if (ViewBag.Cart==0)
+                                {
+                                    <i class="pe-7s-shopbag"></i>
+                                    <span class="count-style">0</span>
+                                }
+                                else
+                                {
+                                    <i class="pe-7s-shopbag"></i>
+                                    <span class="count-style">@ViewBag.Cart</span>
+                                }
+                            </button>
+                            <div class="shopping-cart-content">
+                                <div class="shopping-cart-btn btn-hover text-center">
+                                    <a class="default-btn" asp-controller="Customers" asp-action="Cart">View Cart</a>
+                                    <a class="default-btn" asp-controller="Customers" asp-action="CheckOut">Check Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area">
+                <div class="mobile-menu">
+                    <nav id="mobile-menu-active">
+                        <ul class="menu-overflow">
+                            <li>
+                                <a asp-controller="Customers" asp-action="Index">HOME</a>
+                            </li>
+                            <li>
+                                <a asp-controller="Customers" asp-action="Shop">Shop</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">shop layout</a>
+                                        <ul>
+                                            <li><a href="shop.html">standard style</a></li>
+                                            <li><a href="shop-filter.html">Grid filter style</a></li>
+                                            <li><a href="shop-grid-2-col.html">Grid 2 column</a></li>
+                                            <li><a href="shop-no-sidebar.html">Grid No sidebar</a></li>
+                                            <li><a href="shop-grid-fw.html">Grid full wide </a></li>
+                                            <li><a href="shop-right-sidebar.html">Grid right sidebar</a></li>
+                                            <li><a href="shop-list.html">list 1 column box </a></li>
+                                            <li><a href="shop-list-fw.html">list 1 column full wide </a></li>
+                                            <li><a href="shop-list-fw-2col.html">list 2 column  full wide</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li><a asp-controller="Customers" asp-action="About">About Us</a></li>
+                            <li><a asp-controller="Customers" asp-action="Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+@RenderBody()
+
+<footer class="footer-area bg-gray pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4">
+                <div class="copyright mb-30">
+                    <div class="footer-logo">
+                        <a asp-controller="Customers" asp-action="Index">
+                            <img alt="" src="~/images/logo/javafloristlogo.jpg" width="150" height="80">
+                        </a>
+                    </div>
+                    <p>© 2023 <a href="#">Java Florist</a>.<br> All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4">
+                <div class="footer-widget mb-30 ml-30">
+                    <div class="footer-title">
+                        <h3>ABOUT US</h3>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a asp-controller="Customers" asp-action="Index">Homepage</a></li>
+                            <li><a  asp-controller="Customers"asp-action="About">About Us</a></li>
+                            <li><a asp-controller="Customers" asp-action="Shop">Shop</a></li>
+                            <li><a asp-controller="Customers" asp-action="Blog">Blog</a></li>
+                            <li><a asp-controller="Customers" asp-action="Contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4">
+                <div class="footer-widget mb-30 ml-50">
+                    <div class="footer-title">
+                        <h3>USEFUL LINKS</h3>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">Returns</a></li>
+                            <li><a asp-action="Privacy">Support Policy</a></li>
+                            <li><a href="#">Size guide</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-widget mb-30 ml-75">
+                    <div class="footer-title">
+                        <h3>FOLLOW US</h3>
+                    </div>
+                    <div class="footer-list">
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer-widget mb-30 ml-70">
+                    <div class="footer-title">
+                        <h3>SUBSCRIBE</h3>
+                    </div>
+                    <div class="subscribe-style">
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <div id="mc_embed_signup" class="subscribe-form">
+                            <form id="mc-embedded-subscribe-form" class="validate" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
+                                <div id="mc_embed_signup_scroll" class="mc-form">
+                                    <input class="email" type="email" required="" placeholder="Enter your email here.." name="EMAIL" value="">
+                                    <div class="mc-news" aria-hidden="true">
+                                        <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
+                                    </div>
+                                    <div class="clear">
+                                        <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="~/assets/js/vendor/modernizr-3.11.7.min.js"></script>
+<script src="~/assets/js/vendor/jquery-v3.6.0.min.js"></script>
+<script src="~/assets/js/vendor/jquery-migrate-v3.3.2.min.js"></script>
+<script src="~/assets/js/vendor/popper.min.js"></script>
+<script src="~/assets/js/vendor/bootstrap.min.js"></script>
+<script src="~/assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="~/assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="~/assets/js/main.js"></script>
+<script src="~/assets/js/custom.js"></script>
+<script src="~/js/site.js"></script>
+

@@ -1,0 +1,457 @@
+﻿@model IEnumerable<JavaFloristClient.Models.Bouquet>
+
+@{
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+<body>
+    <div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <ul>
+                    <li>
+                        <a asp-action="Index">Home</a>
+                    </li>
+                    <li class="active">Shop </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    @*    @using (Html.BeginForm("Shop", "Customers", new { page = ViewBag.TotalPage }, FormMethod.Get))
+    *@    @*@using (Html.BeginForm("Shop", "Customers", FormMethod.Get))*@
+    @*{*@
+    @*<input type="hidden" name="page" value="@Model.PageIndex" />*@
+    <div class="shop-area pt-95 pb-100">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-9">
+                    @*<div class="shop-top-bar">
+                    <div class="select-shoing-wrap">
+                    <p>Showing 1–9 of 9 result</p>
+                    </div>
+                    </div>*@
+                    <div class="shop-bottom-area mt-35">
+                        <div class="jump">
+                            <div id="product--list" class="product-list">
+                                <div class="row">
+                                    @foreach (var bouquet in Model)
+                                    {
+                                        <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6 product--item">
+                                            <div class="product-wrap mb-25">
+                                                <div class="product-img">
+                                                    <a href="product-details-8.html">
+                                                        <img class="default-img" src="@Url.Content(bouquet.Image)" width="330" height="330">
+                                                    </a>
+                                                    <span class="purple">@bouquet.Tag</span>
+                                                    <div class="product-action">
+@*                                                        <div class="pro-same-action pro-quickview">
+                                                            <a asp-action="ProductDetail" asp-route-id="@bouquet.Id" title="Quick View"><i class="pe-7s-look"></i></a>
+                                                        </div>*@
+                                                        <div class="pro-same-action pro-wishlist">
+                                                            <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                        </div>
+                                                        <div class="pro-same-action pro-cart add-cart">
+                                                            <form asp-action="AddToCart" id="addToCartForm" method="post" class="d-inline">
+                                                                <input name="id" class="form-control" type="hidden" id="id" value="@bouquet.Id" />
+                                                                <button type="submit" value="Add To Cart" class="custom-button"><i class="pe-7s-cart"></i>Add To Cart</button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="pro-same-action pro-quickview">
+                                                            <a asp-action="ProductDetail" asp-route-id="@bouquet.Id" title="Quick View"><i class="pe-7s-look"></i></a>
+                                                        </div>
+                                                        @*<div class="pro-same-action pro-wishlist">
+                                                            <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                        </div>*@
+                                                    </div>
+                                                </div>
+                                                <div class="product-content text-center">
+                                                    <h3><a>@bouquet.Name </a></h3>
+                                                    <h5 class="gucci">@bouquet.Florist.Name</h5>
+                                                    <div class="product-price">
+                                                        <span>$@bouquet.PriceAfter</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-pagination-style text-center mt-30">
+                            <ul>
+                                @for (int i = 1; i <= ViewBag.TotalPage; i++)
+                                {
+                                    <li>
+                                        <a asp-action="Shop" asp-route-page="@(i)">@(i)</a>
+                                    </li>
+                                }
+                            </ul>
+                            @*<ul>
+                            @for (int i = 1; i <= Model.TotalPage; i++)
+                            {
+                            <li>
+                            <a asp-action="Shop"
+                            asp-route-page="@i"
+                            asp-route-search="@ViewData["Search"]"
+                            asp-route-from="@ViewData["From"]"
+                            asp-route-to="@ViewData["To"]"
+                            asp-route-sortBy="@ViewData["SortBy"]">@i</a>
+                            </li>
+                            }
+                            </ul>*@
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="sidebar-style mr-30">
+                        <div class="sidebar-widget">
+                            <h4 class="pro-sidebar-title">Search </h4>
+                            <div class="pro-sidebar-search mb-50 mt-25">
+                                <input type="text" name="search" id="search" placeholder="Search here..." />
+                                @*<button id="searchTableBtn" type="submit">
+                                <i class="pe-7s-search"></i>
+                                </button>*@
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h4 class="pro-sidebar-title">Search By Price</h4>
+                            <div class="pro-sidebar-search mb-50 mt-25">
+                                <label for="from">Price From:</label>
+                                <input type="number" name="from" id="from" placeholder="Form..." />
+                                <label for="to">Price To:</label>
+                                <input type="number" name="to" id="to" placeholder="To..." />
+                                @*<button id="searchTableBtn" type="submit">
+                                <i class="pe-7s-search"></i>
+                                </button>*@
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h4 class="pro-sidebar-title" for="sortBy">Sort By:</h4>
+                            <div class="pro-sidebar-search mb-50 mt-25">
+                                <select name="sortBy" id="sortBy">
+                                    <option value="">Select Sorting</option>
+                                    <option value="tenhh_desc">Name (Descending)</option>
+                                    <option value="gia_asc">Price (Ascending)</option>
+                                    <option value="gia_desc">Price (Descending)</option>
+                                </select>
+                            </div>
+                            <h4 class="pro-sidebar-title" for="sortBy">Select Occasion:</h4>
+                            <div class="pro-sidebar-search mb-50 mt-25">
+                                <select id="occasion" name="occasion">
+                                    <option value="">All</option>
+                                    <option value="Birthday Flowers">Birthday Flowers</option>
+                                    <option value="Congratulation Flowers">Congratulation Flowers</option>
+                                    <option value="Get Well">Get Well</option>
+                                    <option value="Graduation">Graduation</option>
+                                    <option value="Grand Opening Flowers">Grand Opening Flowers</option>
+                                    <option value="Love Flowers">Love Flowers</option>
+                                    <option value="Noel">Noel</option>
+                                    <option value="Sympathy - Funerals">Sympathy - Funerals</option>
+                                    <option value="Thanks Flowers">Thanks Flowers</option>
+                                    <option value="Wedding Decoration">Wedding Decoration</option>
+                                    <!-- Add more occasion options here -->
+                                </select>
+                            </div>
+                            @*                                <button id="searchTableBtn" type="submit">
+                            <i class="pe-7s-search"></i>
+                            </button>*@
+                            <a class="btn" id="searchLink">
+                                <i class="pe-7s-search"></i> Search
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    @*}*@
+
+    <!-- All JS is here
+    ============================================ -->
+    <script>
+        function thongbao() {
+            alert("Thank you for SUBSCRIBE!!");
+        }
+    </script>
+
+    <aside id="compare-box">
+        <div class="list"></div>
+        <button type="button" class="run" disabled>Compare</button>
+    </aside>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12 col-xs-12">
+                            <div class="tab-content quickview-big-img">
+                                <div id="pro-1" class="tab-pane fade show active">
+                                    <img src="~/assets/img/product/quickview-l1.jpg" alt="">
+                                </div>
+                                <div id="pro-2" class="tab-pane fade">
+                                    <img src="~/assets/img/product/quickview-l2.jpg" alt="">
+                                </div>
+                                <div id="pro-3" class="tab-pane fade">
+                                    <img src="~/assets/img/product/quickview-l3.jpg" alt="">
+                                </div>
+                                <div id="pro-4" class="tab-pane fade">
+                                    <img src="~/assets/img/product/quickview-l2.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- Thumbnail Large Image End -->
+                            <!-- Thumbnail Image End -->
+                            <div class="quickview-wrap mt-15">
+                                <div class="quickview-slide-active owl-carousel nav nav-style-1" role="tablist">
+                                    <a class="active" data-bs-toggle="tab" href="#pro-1"><img src="~/assets/img/product/quickview-s1.jpg" alt=""></a>
+                                    <a data-bs-toggle="tab" href="#pro-2"><img src="~/assets/img/product/quickview-s2.jpg" alt=""></a>
+                                    <a data-bs-toggle="tab" href="#pro-3"><img src="~/assets/img/product/quickview-s3.jpg" alt=""></a>
+                                    <a data-bs-toggle="tab" href="#pro-4"><img src="~/assets/img/product/quickview-s2.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            <div class="product-details-content quickview-content">
+                                <h2>Products Name Here</h2>
+                                <div class="product-details-price">
+                                    <span>$18.00 </span>
+                                    <span class="old">$20.00 </span>
+                                </div>
+                                <div class="pro-details-rating-wrap">
+                                    <div class="pro-details-rating">
+                                        <i class="fa fa-star-o yellow"></i>
+                                        <i class="fa fa-star-o yellow"></i>
+                                        <i class="fa fa-star-o yellow"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </div>
+                                    <span>3 Reviews</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
+                                <div class="pro-details-list">
+                                    <ul>
+                                        <li>- 0.5 mm Dail</li>
+                                        <li>- Inspired vector icons</li>
+                                        <li>- Very modern style  </li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-size-color">
+                                    <div class="pro-details-color-wrap">
+                                        <span>Color</span>
+                                        <div class="pro-details-color-content">
+                                            <ul>
+                                                <li class="blue"></li>
+                                                <li class="maroon active"></li>
+                                                <li class="gray"></li>
+                                                <li class="green"></li>
+                                                <li class="yellow"></li>
+                                                <li class="white"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pro-details-size">
+                                        <span>Size</span>
+                                        <div class="pro-details-size-content">
+                                            <ul>
+                                                <li><a href="#">s</a></li>
+                                                <li><a href="#">m</a></li>
+                                                <li><a href="#">l</a></li>
+                                                <li><a href="#">xl</a></li>
+                                                <li><a href="#">xxl</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-details-quality">
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                                    </div>
+                                    <div class="pro-details-cart btn-hover">
+                                        <a href="#">Add To Cart</a>
+                                    </div>
+                                    <div class="pro-details-wishlist">
+                                        <a href="#"><i class="fa fa-heart-o"></i></a>
+                                    </div>
+                                    <div class="pro-details-compare">
+                                        <a href="#"><i class="pe-7s-shuffle"></i></a>
+                                    </div>
+                                </div>
+                                <div class="pro-details-meta">
+                                    <span>Categories :</span>
+                                    <ul>
+                                        <li><a href="#">Minimal,</a></li>
+                                        <li><a href="#">Furniture,</a></li>
+                                        <li><a href="#">Electronic</a></li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-meta">
+                                    <span>Tag :</span>
+                                    <ul>
+                                        <li><a href="#">Fashion, </a></li>
+                                        <li><a href="#">Furniture,</a></li>
+                                        <li><a href="#">Electronic</a></li>
+                                    </ul>
+                                </div>
+                                <div class="pro-details-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="modal fade" id="product-compare-@item.Id" tabindex="-1" data-bs-backdrop="static" aria-labelledby="product-compare-label-@item.Id" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product-compare-label">Product Comparision</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="product-compare-detail">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>Bouquet</th>
+                                    <td>
+                                        <div class="compare--photo"><img src="@Url.Content(item.Image)" alt="Spring Dress"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>
+                                        <div class="compare--name">@item.Name</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Tag</th>
+                                    <td>
+                                        <div class="compare--type">@item.Tag</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Brief</th>
+                                    <td>
+                                        <div class="compare--type">@item.UnitBrief</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price</th>
+                                    <td>
+                                        <div class="compare--price">@item.PriceAfter</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Description</th>
+                                    <td>
+                                        <div class="compare--price">@item.Description</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Categories</th>
+                                    <td>
+                                        <div class="compare--categories">@item.Category.Name</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Florist</th>
+                                    <td>
+                                        <div class="compare--style">@item.Florist.Name</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Description</th>
+                                    <td>
+                                        <div class="compare--price">@item.Description</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <!-- Modal end -->
+    <script>
+        // Find the search button link and attach a click event handler
+        //document.getElementById("searchLink").addEventListener("click", function (e) {
+        //    e.preventDefault(); // Prevent the default link behavior
+
+        //    // Get values from input fields
+        //    var searchValue = document.getElementById("search").value;
+        //    var fromValue = document.getElementById("from").value;
+        //    var toValue = document.getElementById("to").value;
+        //    var sortByValue = document.getElementById("sortBy").value;
+        //    var sortByValue = document.getElementById("sortBy").value;
+
+        //    // Construct the URL with parameters
+        //    var url = `/Customers/Shop?search=${searchValue}&from=${fromValue}&to=${toValue}&sortBy=${sortByValue}`;
+
+        //    // Navigate to the constructed URL
+        //    window.location.href = url;
+        //});
+        document.getElementById("searchLink").addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+
+            // Get values from input fields
+            var searchValue = document.getElementById("search").value;
+            var fromValue = document.getElementById("from").value;
+            var toValue = document.getElementById("to").value;
+            var sortByValue = document.getElementById("sortBy").value;
+
+            // Get the selected occasion value from the combobox
+            var selectedOption = document.getElementById("occasion");
+            var occasionValue = selectedOption.options[selectedOption.selectedIndex].value;
+
+            // Construct the URL with parameters
+            var url = `/Customers/Shop?search=${searchValue}&from=${fromValue}&to=${toValue}&sortBy=${sortByValue}&occasion=${occasionValue}`;
+
+            // Navigate to the constructed URL
+            window.location.href = url;
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const compareButtons = document.querySelectorAll(".btn-compare");
+            const compareModal = document.getElementById("product-compare");
+
+            compareButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    const productId = button.getAttribute("data-product-id");
+                    displayCompareModal(productId);
+                });
+            });
+
+            function displayCompareModal(productId) {
+                const modalBody = compareModal.querySelector(".modal-body");
+                modalBody.innerHTML = ""; // Clear the previous content
+
+                const productDetailDiv = document.getElementById("product-compare-detail-" + productId);
+
+                if (productDetailDiv) {
+                    const clone = productDetailDiv.cloneNode(true);
+                    modalBody.appendChild(clone);
+                    compareModal.show();
+                }
+            }
+        });
+    </script>
+
+</body>

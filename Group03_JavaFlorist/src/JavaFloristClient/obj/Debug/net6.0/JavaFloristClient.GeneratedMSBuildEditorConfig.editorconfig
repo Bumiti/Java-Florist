@@ -1,0 +1,493 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = JavaFloristClient
+build_property.RootNamespace = JavaFloristClient
+build_property.ProjectDir = D:\STUDY IT\FPT Aptech\Sem3\7. eProject\15-08\Group03_JavaFlorist\src\JavaFloristClient\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\STUDY IT\FPT Aptech\Sem3\7. eProject\15-08\Group03_JavaFlorist\src\JavaFloristClient
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Accounts/Fobbiden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcRm9iYmlkZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Accounts/Invalid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcSW52YWxpZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Accounts/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Accounts/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Blogs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Blogs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Blogs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Blogs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Blogs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Bouquets/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm91cXVldHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Bouquets/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm91cXVldHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Bouquets/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm91cXVldHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Bouquets/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm91cXVldHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Bouquets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm91cXVldHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Buyers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Buyers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Buyers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Buyers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Buyers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Carts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Carts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Carts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Carts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Carts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/BlogDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEJsb2dEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Bonlebon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEJvbmxlYm9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENoZWNrT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Forbidden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEZvcmJpZGRlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEZvcmdvdFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Invalid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEludmFsaWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/MyAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXE15QWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/MyOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXE15T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXE9yZGVyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/PaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFBheW1lbnRQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/ProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFByb2R1Y3REZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/RegisterFlorist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFJlZ2lzdGVyRmxvcmlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFJlc2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Customers/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXFNob3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/CreateBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcQ3JlYXRlQmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/CreateBouquet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcQ3JlYXRlQm91cXVldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGFzaEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DeleteBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGVsZXRlQmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DeleteBouquet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGVsZXRlQm91cXVldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DetailsBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGV0YWlsc0Jsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DetailsBouquet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGV0YWlsc0JvdXF1ZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/DetailsOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRGV0YWlsc09yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/EditBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRWRpdEJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/EditBouquet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcRWRpdEJvdXF1ZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/IndexBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcSW5kZXhCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/IndexBouquet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcSW5kZXhCb3VxdWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/IndexOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcSW5kZXhPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/FloristAlls/IndexOrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdEFsbHNcSW5kZXhPcmRlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Florists/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Florists/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Florists/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Florists/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Florists/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxvcmlzdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Home/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Occasions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NjYXNpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Occasions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NjYXNpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Occasions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NjYXNpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Occasions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NjYXNpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Occasions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2NjYXNpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/OrderDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/OrderDetails/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/OrderDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/OrderDetails/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/OrderDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Receivers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl2ZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Receivers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl2ZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Receivers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl2ZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Receivers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl2ZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Receivers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZWl2ZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/FloristLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZsb3Jpc3RMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFVzZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Status/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Status/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Status/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Status/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Status/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdHVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/VnPay/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm5QYXlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Vouchers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Vouchers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Vouchers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Vouchers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Vouchers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/STUDY IT/FPT Aptech/Sem3/7. eProject/15-08/Group03_JavaFlorist/src/JavaFloristClient/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-os2r1w18sk
